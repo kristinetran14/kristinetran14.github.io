@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Alex's personal web page</title>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_Introduction.css">
+    <script src='js/lib/angular.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/prefixfree.min.js"></script>
+  </head>
+  <body ng-app="ngFilter" ng-controller="MainController as main">
+    <table class="doc-loader">
+      <tr>
+        <td>
+          <img src="img/doc_loader/Preloader_3.gif" alt="loading..." />
+        </td>
+      </tr>
+    </table>
+    <canvas id="canvas"></canvas>
+    <div id="main-content">
+      <div id="navigation">
+        <a class="navigation" href="index.html"><div>⊙ Home</div></a>
+       
+        <a class="navigation" href="aboutme.html"><div>⊙ About Me</div></a>
+       
+        <a class="navigation" href="software.html"><div>⊙ Software</div></a>
+        <a class="navigation" href="hardware.html"><div>⊙ Hardware</div></a>      
+      </div>
+    </div>
+
+
+    <div id="wrap">
+      <div id="boardLayout">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li class="showWords"></li>
+          <li class="showWords">I'</li>
+          <li class="showWords">m</li>
+          <li class="showWords"></li>
+          <li class="showWords">A</li>
+          <li class="showWords">L</li>
+          <li class="showWords">E</li>
+          <li class="showWords">X</li>
+          <li class="showWords"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li class="showWords">D</li>
+          <li class="showWords">e</li>
+          <li class="showWords">v</li>
+          <li class="showWords">e</li>
+          <li class="showWords">l</li>
+          <li class="showWords">o</li>
+          <li class="showWords">p</li>
+          <li class="showWords">e</li>
+          <li class="showWords">r</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li class="showWords">⊕</li>
+          <li class="showWords">D</li>
+          <li class="showWords">e</li>
+          <li class="showWords">s</li>
+          <li class="showWords">i</li>
+          <li class="showWords">g</li>
+          <li class="showWords">n</li>
+          <li class="showWords">e</li>
+          <li class="showWords">r</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li class="social_media"><a href="https://www.facebook.com/chenxing.ouyang">f</a></li>
+     <!--      <li class="social_media"><a href="https://plus.google.com/u/0/">g+</a></li> -->
+          <li class="social_media"><a href="https://www.linkedin.com/profile/view?id=AAIAAAv0RAYBhvmwxiZGtXLACd-W38oJ6AY0bO0&trk=nav_responsive_tab_profile_pic">in</a></li>
+          <li class="social_media"><a href="https://github.com/AlexOuyang">git</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      
+      
+      <div id="projects-app" class="projects">
+        <ul>
+          <li class = "project" ng-animate="'animate'" ng-repeat="show in main.shows | filter:main.searchInput">
+            <div class="project-container"><a href="{{show.url}}" class="project-img"><img ng-src="{{show.img_url}}"></a>
+            <div class="project-description">
+              <h3>{{show.title}}
+              <span class="date">{{show.year}}</span>
+              </h3>
+              <h5 class="btn-tag btn btn-success"><em>Tags: {{show.tags}}</em></h5>
+              <p>{{show.description}}</p>
+            </div>
+            <div ng-if="show.haveExternalLink == true">
+              <a class="btn btn-success btn-view" href="{{show.url}}">View Project ➡</a>
+            </div>
+            <!--      <input type='button' value='fullscreen' onclick='fullscreen();' /> -->
+          </li>
+        </ul>
+      </div>
+      
+      <div id="About">
+        <ul>
+          <li class = "project">
+            <div class="me-container"><img src="img/Projects/me.png" class = "me-img">
+              <div class="me-description">
+                <h3>⇽ ALEX
+                <h5 class="btn-tag btn btn-success"><em>Tags: Student, Game Developer & Designer</em></h5>
+                <p>My name is Chenxing Ouyang, I go by Alex. My dream is to become a Computational Scientist & Physicist. I am deeply puzzled by the complexity of life and the universe, and I wish to know more about them.
+                I love breakdancing, playing guitar, making games, drawing anime characters and watching anime! I also enjoy reading in fields related to math, physics, philosophy and psychology! Learning is what keeps me alive!</p>
+              </div>
+              <a id="resume" class="btn btn-success" href="file/RESUME.pdf" download="ChenxingOuyang-Resume"><span>Download My CV ⬇</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+  <script src="js/helperFunctions.js"></script>
+  <script src="js/angularFilter.js"></script>
+</body>
+</html>

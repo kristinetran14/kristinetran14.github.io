@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Alex's personal web page</title>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_Introduction.css">
+    <script src='js/lib/angular.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/prefixfree.min.js"></script>
+  </head>
+  <body ng-app="ngFilter" ng-controller="MainController as main">
+    <table class="doc-loader">
+      <tr>
+        <td>
+          <img src="img/doc_loader/Preloader_3.gif" alt="loading..." />
+        </td>
+      </tr>
+    </table>
+    <canvas id="canvas"></canvas>
+    <div id="main-content">
+      <div id="navigation">
+        <a class="navigation" href="index.html"><div>⊙ Home</div></a>
+       
+        <a class="navigation" href="aboutme.html"><div>⊙ About Me</div></a>
+       
+        <a class="navigation" href="software.html"><div>⊙ Software</div></a>
+        <a class="navigation" href="hardware.html"><div>⊙ Hardware</div></a>  
+      </div>
+    </div>
+
+
+    <div id="wrap">
+      <div id="projects-app" class="projects">
+        <ul>
+          <li class = "project" ng-animate="'animate'" ng-repeat="software in main.softwares">
+            <div class="project-container"><a href="{{software.url}}" class="project-img"><img ng-src="{{software.img_url}}"></a>
+            <div class="project-description">
+              <h3>{{software.title}}
+              <span class="date">{{software.year}}</span>
+              </h3>
+              <h5 class="btn-tag btn btn-success"><em>{{software.tags}}</em></h5>
+              <p>{{software.description}}</p>
+            </div>
+            <div ng-if="software.haveExternalLink == true">
+              <a class="btn btn-success btn-view" href="{{software.url}}">View Project ➡</a>
+            </div>
+            <!--      <input type='button' value='fullscreen' onclick='fullscreen();' /> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+  </div>
+  <script src="js/index.js"></script>
+  <script src="js/helperFunctions.js"></script>
+  <script src="js/angularFilter.js"></script>
+</body>
+</html>
