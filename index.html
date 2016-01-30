@@ -1,169 +1,207 @@
-<!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Alex's personal web page</title>
-    <link rel="shortcut icon" href="favicon.png"/>
-    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_Introduction.css">
-    <script src='js/lib/angular.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="js/prefixfree.min.js"></script>
-  </head>
-  <body ng-app="ngFilter" ng-controller="MainController as main">
-    <table class="doc-loader">
-      <tr>
-        <td>
-          <img src="img/doc_loader/Preloader_3.gif" alt="loading..." />
-        </td>
-      </tr>
-    </table>
-    <canvas id="canvas"></canvas>
-    <div id="main-content">
-      <div id="navigation">
-        <a class="navigation" href="index.html"><div>⊙ Home</div></a>
-        <a class="navigation" href="aboutme.html"><div>⊙ About Me</div></a>
-        <a class="navigation" href="software.html"><div>⊙ Software</div></a>
-        <a class="navigation" href="hardware.html"><div>⊙ Hardware</div></a>       
-      </div>
-    </div>
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-    <div id="wrap">
-      <div id="boardLayout">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li class="showWords"></li>
-          <li class="showWords">I'</li>
-          <li class="showWords">m</li>
-          <li class="showWords"></li>
-          <li class="showWords">A</li>
-          <li class="showWords">L</li>
-          <li class="showWords">E</li>
-          <li class="showWords">X</li>
-          <li class="showWords"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li class="showWords">D</li>
-          <li class="showWords">e</li>
-          <li class="showWords">v</li>
-          <li class="showWords">e</li>
-          <li class="showWords">l</li>
-          <li class="showWords">o</li>
-          <li class="showWords">p</li>
-          <li class="showWords">e</li>
-          <li class="showWords">r</li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li class="showWords">⊕</li>
-          <li class="showWords">D</li>
-          <li class="showWords">e</li>
-          <li class="showWords">s</li>
-          <li class="showWords">i</li>
-          <li class="showWords">g</li>
-          <li class="showWords">n</li>
-          <li class="showWords">e</li>
-          <li class="showWords">r</li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li class="social_media"><a href="https://www.facebook.com/chenxing.ouyang">f</a></li>
-     <!--      <li class="social_media"><a href="https://plus.google.com/u/0/">g+</a></li> -->
-          <li class="social_media"><a href="https://www.linkedin.com/profile/view?id=AAIAAAv0RAYBhvmwxiZGtXLACd-W38oJ6AY0bO0&trk=nav_responsive_tab_profile_pic">in</a></li>
-          <li class="social_media"><a href="https://github.com/AlexOuyang">git</a></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-      
-      
-      
-      <div id="About">
-        <ul>
-          <li class = "project">
-            <div class="me-container"><img src="img/Projects/me.png" class = "me-img">
-              <div class="me-description">
-                <h3>⇽ ALEX
-                <h5 class="btn-tag btn btn-success"><em> Student, Software and Hardware Developer & Designer</em></h5>
-                <p>My name is Chenxing Ouyang, I go by Alex. My dream is to become a Computational Scientist & Physicist. I am deeply puzzled by the complexity of life and the universe, and I wish to know more about them.
-                I love breakdancing, playing guitar, making games, drawing anime characters and watching anime! I also enjoy reading in fields related to math, physics, philosophy and psychology! Learning is what keeps me alive!</p>
-              </div>
-              <a id="resume" class="btn btn-success" href="file/RESUME.pdf" download="ChenxingOuyang-Resume"><span>Download My CV ⬇</span></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <script src="js/index.js"></script>
-  <script src="js/helperFunctions.js"></script>
-  <script src="js/angularFilter.js"></script>
-</body>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html"> KRISTINE | PERSONAL WEBSITE</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">INTRODUCTION</a></li>
+								<li><a href="generic.html">PERSONAL PROJECTS</a></li>
+								<li><a href="elements.html">AWARDS AND SCHOLARSHIPS</a></li>
+								<li><a href="#">EXTRACURRICULAR ACTIVITIES</a></li>
+								<li><a href="#">CONTACT</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="circular">
+							<center><img src="images/personal/PICTURE2.png" alt="Professional Picture" style="width:120px;height:120px;"></span>
+							</div>
+							<h2><center>KRISTINE KHANH TRAN</center></h2>
+							<h3><center><bold>UNIVERSITY OF CALIFORNIA - SAN DIEGO</bold></center></h3>
+							<p><center><i>An aspiring computer engineering student who has a keen interests in designing both sofware and hardware related projects.</i></center></p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/personal/girl2.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">introduction</h2>
+										<p>My name is Kristine, an aspiring computer engineering student who has a keen interests in designing both sofware and hardware related projects.</p>
+										<a href="#" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+							<div class="inner">
+									<a href="#" class="image"><img src="images/personal/trophy.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">AWARDS AND SCHOLARSHIPS</h2>
+										<ul style="text-align:left">
+											<li>April 2012 - President Volunteer Service Award <i>(from President Obama)</i></li>
+											<li>April 2012 - Certificate of Appreciation <i>(from Congressman Mike Honda)</i></li>
+											<li>February 2011 - Senator Award (Sciencepalooza) <i>(from Barbara Boxer)</i></li>
+											<li>July 2009 - 3rd place in International Robotic Competition Scholarships (sponsored NASA Robotics Alliance Project)</li>
+											<li>April 2012 - Coca Cola National Scholar <i>(Top 50 out of 84,000 scholars)</i></li>
+											<li>April 2012 - Good Tiding Scholarship <i>(sponsored by San Francisco Giants)</i></li>
+											<li>March 2012 - Vietnamese American Professional Women Scholarship</li>
+											<li>February 2012 - Rotary Youth Leadership Scholarship</li>
+											<li>June 2014 - Society of Women Engineers Scholarship</li>
+										</ul>
+										<a href="#" class="special">Learn more</a>
+									</div>
+								</div>
+								
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/personal/activity.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Extracircular activities</h2>
+										<ul style="text-align:left">
+											<li>April 2012 - President Volunteer Service Award <i>(from President Obama)</i></li>
+											<li>April 2012 - Certificate of Appreciation <i>(from Congressman Mike Honda)</i></li>
+											<li>February 2011 - Senator Award (Sciencepalooza) <i>(from Barbara Boxer)</i></li>
+											<li>July 2009 - 3rd place in International Robotic Competition Scholarships (sponsored NASA Robotics Alliance Project)</li>
+											<li>April 2012 - Coca Cola National Scholar <i>(Top 50 out of 84,000 scholars)</i></li>
+											<li>April 2012 - Good Tiding Scholarship <i>(sponsored by San Francisco Giants)</i></li>
+											<li>March 2012 - Vietnamese American Professional Women Scholarship</li>
+											<li>February 2012 - Rotary Youth Leadership Scholarship</li>
+											<li>June 2014 - Society of Women Engineers Scholarship</li>
+										</ul>
+										<a href="#" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Vitae phasellus</h2>
+									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/personal/viacar.jpg" alt="" /></a>
+											<h3 class="major">IEEE ViaCar</h3>
+											<p>Building an autonomous 1/10 scale RC car that can race around track marked by a wire carrying a sinusoidal current at 75khz with amplitude 100mA. Modeling the effects of various non-idealities in the ViaCar environment including sensor orientation, noise, non-idealities of the analog input signal path, finite sampling rate and resolution, time delays, mass, inertia, and friction. Hand analysis and SPICE  simulation of relevant circuits. Prototyping of relevant circuits on breadboard and characterization of performance.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3 class="major">Nisl placerat</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3 class="major">Ante fermentum</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<h3 class="major">Fusce consequat</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+							<form method="post" action="#">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="fa-home">
+									Untitled Inc<br />
+									1234 Somewhere Road Suite #2894<br />
+									Nashville, TN 00000-0000
+								</li>
+								<li class="fa-phone">(000) 000-0000</li>
+								<li class="fa-envelope"><a href="#">information@untitled.tld</a></li>
+								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
